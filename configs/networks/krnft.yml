@@ -1,0 +1,33 @@
+network:
+  name: coop
+  num_classes: '@{dataset.num_classes}'
+  pretrained: False # In training pipeline:"False"; In testing pipeline:"True"
+  num_gpus: '@{num_gpus}'
+  checkpoint: none
+
+  feat_dim: 128
+  head: mlp
+
+  backbone:
+    name: ViT-B/16
+    num_classes: '@{dataset.num_classes}' # 1000
+    dataset: '@{dataset.name}' # imagenet
+    text_prompt: simple
+    text_center: True
+    image_size: '@{dataset.image_size}'
+    N_CTX: 1
+    N_EX_CTX: 1
+    OOD_NUM: 10500 # number of ood prompts
+    CTX_INIT: 'The nice'
+    EX_CTX_INIT: 'The nice'
+    EX_LEARNED_CLS: False
+    EX_CLS: neglabel
+    CSC: False
+    prompttype: dis_aware
+    CLASS_TOKEN_POSITION: end
+    pretrained: True
+    checkpoint: none
+    num_gpus: '@{num_gpus}'
+    dis_type: binary
+    meta_dim: 8
+    function: element

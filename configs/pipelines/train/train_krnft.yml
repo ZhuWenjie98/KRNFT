@@ -1,0 +1,52 @@
+exp_name: "'@{dataset.name}'_'@{network.name}'_'@{trainer.name}'_e'@{optimizer.num_epochs}'_lr'@{optimizer.lr}'_'@{mark}'/s'@{seed}'"
+output_dir: ./results/
+save_output: True
+merge_option: default
+mark: default
+seed: 0
+
+num_gpus: 1
+num_workers: 8
+num_machines: 1
+machine_rank: 0
+
+pipeline:
+  name: train_krnft
+
+trainer:
+  name: krnft
+  trainer_args:
+    n_selection: 32
+    jsd: True
+    lam: 12
+
+evaluator:
+  name: base
+
+optimizer:
+  name: adamw
+  num_epochs: 3
+  lr: 0.005
+  momentum: 0.9
+  weight_decay: 0.0005
+
+recorder:
+  name: base
+  save_all_models: False
+  save_csv: True
+
+backbone:  
+  name: ViT-B/16 
+
+n_cls: 1000  
+lam_in: 1.0
+lam_out: 0.3
+lam_diff: 0.0
+lam_kd: 10
+n_group: 10
+
+
+
+
+# loss:
+#   diversity: False
