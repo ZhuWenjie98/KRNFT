@@ -60,4 +60,4 @@ Our codebase accesses the datasets from `./data/` and pretrained models from `./
 </details>
 
 ## 🚀 Training/Testing
-We provide training and evaluation scripts for all the methods we support in [scripts folder]().
+We provide training and evaluation scripts for all the methods we support in [scripts folder](https://github.com/ZhuWenjie98/KRNFT/tree/main/scripts/ood/krnft).
