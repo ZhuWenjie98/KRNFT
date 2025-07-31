@@ -1,5 +1,5 @@
 # KRNFT
-This repository provides the official PyTorch implementation of our ACM MM2025 paper KRNFT.
+This repository provides the official PyTorch implementation of our ACM MM2025 paper KRNFT [arxiv link]([https://github.com/Jingkang50/OpenOOD/tree/main/scripts/download](https://www.arxiv.org/abs/2507.19847)).
 
 ## ⚙️ Dependencies and Installation
 <details>
