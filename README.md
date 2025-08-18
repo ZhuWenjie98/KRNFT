@@ -1,5 +1,5 @@
 # KRNFT
-This repository provides the official PyTorch implementation of our ACM MM2025 paper Knowledge Regularized Negative Feature Tuning of Vision-Language Models for Out-of-Distribution Detection [![arXiv]([https://img.shields.io/badge/arXiv-2410.14975-FF9999.svg](https://img.shields.io/badge/arXiv-2507.19847-FF9999.svg))](https://www.arxiv.org/abs/2507.19847).
+This repository provides the official PyTorch implementation of our ACM MM2025 paper Knowledge Regularized Negative Feature Tuning of Vision-Language Models for Out-of-Distribution Detection [![arXiv](https://img.shields.io/badge/arXiv-2507.19847-FF9999.svg)](https://www.arxiv.org/abs/2507.19847).
 
 ## ⚙️ Dependencies and Installation
 <details>
