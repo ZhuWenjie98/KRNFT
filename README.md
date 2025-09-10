@@ -1,8 +1,15 @@
-# KRNFT
-This repository provides the official PyTorch implementation of our ACM MM2025 paper Knowledge Regularized Negative Feature Tuning of Vision-Language Models for Out-of-Distribution Detection [![arXiv](https://img.shields.io/badge/arXiv-2507.19847-FF9999.svg)](https://www.arxiv.org/abs/2507.19847).
+# Knowledge Regularized Negative Feature Tuning of Vision-Language Models
+
+<a href='https://www.arxiv.org/abs/2507.19847'><img src='https://img.shields.io/badge/arXiv-2507.19847-FF9999.svg'></a> &nbsp;&nbsp;
+
+[Wenjie Zhu](https://scholar.google.com/citations?hl=en&authuser=1&user=8hodVdAAAAAJ)<sup>1,2</sup> | [Yabin Zhang](https://scholar.google.com/citations?user=p0GLwtoAAAAJ&hl=en)<sup>3</sup> | [Xin Jin](https://scholar.google.com/citations?user=byaSC-kAAAAJ&hl=zh-CN)<sup>2</sup> | [Wenjun Zeng](https://scholar.google.com/citations?user=_cUfvYQAAAAJ&hl=en)<sup>2</sup> | [Lei Zhang](https://www4.comp.polyu.edu.hk/~cslzhang/)<sup>1</sup>
+
+<sup>1</sup>The Hong Kong Polytechnic University, <sup>2</sup>Eastern Institute of Technology, Ningbo, <sup>3</sup>Stanford University.
+
+:star: If KRNFT is helpful to your images or projects, please help star this repo. Thanks! :hugs:
 
 ## 🔥 News
-- **25 July, 2025**: Our paper is accepted by ACM MM 2025.  You can easily reproduce our results with [Bash](https://github.com/ZhuWenjie98/KRNFT/tree/main/scripts/ood/krnft).
+- **25 July, 2025**: Our paper has been accepted by ACM MM 2025.  You can easily reproduce our results with [Bash](https://github.com/ZhuWenjie98/KRNFT/tree/main/scripts/ood/krnft).
 
 ## ⚙️ Dependencies and Installation
 <details>
