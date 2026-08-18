@@ -25,24 +25,6 @@ L = L_positive + lambda_1 * L_negative + lambda_2 * L_knowledge
 
 Positive crops are trained with cross-entropy, negative crops minimize the ID probability mass, and the knowledge term constrains the tuned text features to remain close to the original CLIP features.
 
-```mermaid
-flowchart LR
-    A[ID image] --> B[Random crops]
-    B --> C[CLIP image encoder]
-    C --> D{Crop selection}
-    D --> E[Positive crops]
-    D --> F[Negative crops]
-    C --> G[Image-conditional meta-net]
-    G --> H[Distribution-aware scale and shift]
-    I[Frozen positive and negative text features] --> H
-    H --> J[Tuned text features]
-    E --> K[Classification loss]
-    F --> L[OOD loss]
-    I --> M[Knowledge regularization]
-    J --> K
-    J --> L
-    J --> M
-```
 
 ## Reported results
 
