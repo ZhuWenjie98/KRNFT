@@ -1,3 +1,0 @@
-preprocessor:
-  name: randcrop
-  n_crop: 128

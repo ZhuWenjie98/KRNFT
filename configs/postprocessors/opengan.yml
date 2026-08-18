@@ -1,3 +1,0 @@
-postprocessor:
-    name: opengan
-    APS_mode: False

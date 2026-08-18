@@ -1,5 +1,0 @@
-postprocessor:
-  name: she
-  APS_mode: False
-  postprocessor_args:
-    metric: inner_product
